@@ -18,7 +18,7 @@ print(summary)
 
 for idx in range(0, len(my_list)):
     my_list[idx] += 17
-    my_list.insert(idx, my_list[idx])
+    
 
 summary = 0
 for num in my_list:
