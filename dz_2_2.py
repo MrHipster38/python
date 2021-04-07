@@ -3,10 +3,10 @@ user_list = []
 
 for item in some_list:
     if item.isdigit():
-        num = '{:02d}'.format(int(item))
+        num = f'{int(item):02d}'
         user_list.extend(['"', num, '"'])
     elif item[0] == '+':
-        num = '+{:02d}'.format(int(item))
+        num = f'+{int(item):02d}'
         user_list.extend(['"', num, '"'])
     else:
         user_list.append(item)
