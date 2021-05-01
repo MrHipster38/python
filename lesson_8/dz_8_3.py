@@ -11,7 +11,6 @@ def type_logger(func):
 
 @type_logger
 def some_func(num):
-    result = num * 5
-    return result
+    return num * 5
 
 print(some_func.__name__, some_func(50))
